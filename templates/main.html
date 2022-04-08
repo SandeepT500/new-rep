@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/MainApp/CSS/style.css" />
+  </head>
+  <body>
+    <form action method="post">
+      <h1><strong>File upload</strong></h1>
+      <div class="form-group">
+        <label for="title">Name</label>
+        <input
+          type="text"
+          name="fileTitle"
+          id="fileTitle"
+          class="form-controll" 
+        />
+      </div>
+      <div class="form-group file-area">
+        <label for="images">choose File</label>
+        <input
+          type="file"
+          name="File"
+          id="file"
+          required="required"
+          multiple="multiple"
+        />
+      </div>
+      <div class="form-group button-container">
+        <div class="button">
+          <button type="submit" onclick="saveDocument()">Upload File</button>
+        </div>
+        <div class="button">
+          <button type="submit">
+            <a href="/downloadPage.html" style="text-decoration: none"
+              >Get file</a
+            >
+          </button>
+        </div>
+      </div>
+      <label id="printHello"></label>
+    </form>
+    <script src="../static/MainApp/JS/index.js"></script>
+  </body>
+</html>
